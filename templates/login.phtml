@@ -1,0 +1,15 @@
+<?php include "header.phtml"?>
+<div class="container">
+    <form action="/login" method="post" >
+        <label>Login</label>
+        <input type="email" name="login" class="form-control" required/>
+        <label>Password</label>
+        <input type="password" name="password" class="form-control"/>
+        <input type="submit" value="Login" class="btn btn-success" />
+        <input type="reset" value="Effacer" class="btn btn-primary">
+    </form>
+    <?php echo isset($result)?$result:"" ?>
+</div>
+    <?php include "footer.phtml";?>
+</body>
+</html>
